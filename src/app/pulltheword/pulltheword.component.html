@@ -1,0 +1,87 @@
+<!-- <p>
+  pulltheword works!
+</p> -->
+<p></p>
+<p></p>
+<div class="mx-auto" style="width: 200px;">
+<nav>
+
+  <a routerLink="/addword" routerLinkActive="active">Add Word</a>
+
+</nav>
+</div>
+
+<div class="mx-auto" style="width: 200px;">
+<p>
+<!-- <input type="text" #plword (keyup)="onNameKeyUp($event)"> -->
+
+  <button (click)="getWord()">Pull The Word</button>
+
+</p>
+</div>
+
+<br>
+
+<!-- <div class="mx-auto" style="width: 200px;">
+  <p> -->
+  <!-- <input type="text" #plword (keyup)="onNameKeyUp($event)"> -->
+  
+    <!-- <button (click)="getWordd()">Show info</button> -->
+  
+  <!-- </p>
+  </div> -->
+
+<br>
+
+ <div *ngIf="found" class="mx-auto" style="width: 200px;">
+
+  <span> {{ pl }}</span>
+
+ </div>
+
+
+
+ <div class="mx-auto" style="width: 200px;">
+ <p>
+    <!-- <input type="text" #plword (keyup)="onNameKeyUp($event)"> -->
+    
+      <button (click)="getSupport()">Support</button>
+    
+    </p>
+    
+    <br>
+ </div>   
+
+
+     <div *ngIf="found" class="mx-auto" style="width: 200px;">
+    
+      <span> {{ engwsupport }}</span>
+    
+     </div>
+
+
+
+
+
+
+  
+<p>
+
+    <div class="mx-auto" style="width: 200px;">
+<input type="text" (keyup)="onTypedEngWordKeyUp($event)">
+<button (click)="typedEngWord()">Submit</button>
+   </div>
+
+<p>
+  
+{{ answer }}
+</p>
+
+
+<!-- </p>
+  <nav>
+
+    <a routerLink="/addword" routerLinkActive="active">Add Word</a>
+
+</nav> -->
+

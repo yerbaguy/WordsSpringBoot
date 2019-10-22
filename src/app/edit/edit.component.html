@@ -1,0 +1,40 @@
+<p>
+  edit works!
+</p>
+
+<div class="mx-auto" style="width: 200px;">
+
+  <!-- <input #engwordInput placeholder="Engword" />
+  <input #plwordInput placeholder="Plword" /> -->
+  <!-- <input #engwordInput placeholder="{{ engw }}" /> -->
+  <input #categoriesNameInput placeholder="{{ catName }}" />
+  <!-- <button (click)="add(engwordInput.value, plwordInput.value); engwordInput.value = ''; plwordInput.value = ''">Add Word</button> -->
+  <button (click)="addCateg(categoriesNameInput.value); categoriesNameInput.value = '';">Add Word</button>
+</div>
+
+<div class="mx-auto" style="width: 200px;">
+  <p>
+  <!-- <input type="text" #plword (keyup)="onNameKeyUp($event)"> -->
+  
+    <button (click)="getCatName()">Get Category</button>
+
+    {{catName}}
+  
+  </p>
+  </div>
+
+
+
+
+<div class="mx-auto" style="width: 200px;">
+<p>
+<!-- <input type="text" #plword (keyup)="onNameKeyUp($event)"> -->
+
+  <button (click)="getPlWord()">SetPlWord</button>
+
+</p>
+</div>
+
+{{ engw }}
+
+{{ plw }}

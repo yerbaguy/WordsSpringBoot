@@ -1,0 +1,37 @@
+
+<div class="mx-auto" style="width: 200px;">
+
+    <input #engwordInput placeholder="Engword" />
+    <input #plwordInput placeholder="Plword" />
+    <button (click)="add(engwordInput.value, plwordInput.value); engwordInput.value = ''; plwordInput.value = ''">Add Word</button>
+
+</div>
+
+
+
+
+<p>
+    <!-- <input type="text" #plword (keyup)="onNameKeyUp($event)">
+    <button (click)="getWord()">Pull The Word</button>
+    </p> -->
+
+    <!-- <p>
+   <input type="text" (keyup)="onTypedEngWordKeyUp($event)">
+   <button (click)="typedEngWord()">Submit</button>
+        </p> -->
+
+
+
+    <!-- <p>
+   EngWord <input type="text" (keyup)="onTypedEngWordKeyUp($event)">    
+   PlWord <input type="text" (keyup)="onTypedPlWordKeyUp($event)">
+    <button (click)="typedPlWord()">Submit</button>
+    </p>   // switched off -->
+
+<div class="mx-auto" style="width: 200px;">
+<nav>
+
+    <a routerLink="/pulltheword" routerLinkActive="active">Practice Exercise</a>
+
+</nav>
+</div>
